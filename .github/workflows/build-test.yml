@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -36,4 +37,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: "${{ env.IMAGE_REGISTRY }}/ci-cd-test:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/ci-cd-test:latest"
+          tags: "${{ env.IMAGE_REGISTRY }}/ci-cd-test-2:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/ci-cd-test-2:latest"

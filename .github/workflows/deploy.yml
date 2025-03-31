@@ -5,7 +5,7 @@ on:
   workflow_run:
     workflows: [Build and test lab-cicd]
     types: [completed]
-    branches: [main]
+    branches: [main, dev]
 
 jobs:
   deploy:
