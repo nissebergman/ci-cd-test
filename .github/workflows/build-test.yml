@@ -17,8 +17,8 @@ jobs:
       contents: read
     name: Build cicd-lab
     env:
-      GITHUB_USER: <YOUR_USER>
-      IMAGE_REGISTRY: ghcr.io/<YOUR_USER>
+      GITHUB_USER: nissebergman
+      IMAGE_REGISTRY: ghcr.io/nissebergman
     steps:
       # Checkout our repository
       - uses: actions/checkout@v4
