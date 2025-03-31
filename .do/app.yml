@@ -1,0 +1,23 @@
+features:
+  - buildpack-stack=ubuntu-22
+ingress:
+  rules:
+    - component:
+        name: nissebergman-ci-cd-test
+      match:
+        path:
+          prefix: /
+name: lab-cicd-app
+region: ams
+services:
+  - health_check:
+      http_path: /
+    http_port: 80
+    image:
+      registry: nissebergman
+      registry_type: GHCR
+      repository: ci-cd-test
+      tag: latest
+    instance_count: 1
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    name: nissebergman-ci-cd-test
