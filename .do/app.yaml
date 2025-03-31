@@ -17,7 +17,7 @@ services:
       registry: nissebergman
       registry_type: GHCR
       repository: ci-cd-test
-      tag: latest
+      tag: dev
     instance_count: 1
     instance_size_slug: apps-s-1vcpu-0.5gb
     name: nissebergman-ci-cd-test
