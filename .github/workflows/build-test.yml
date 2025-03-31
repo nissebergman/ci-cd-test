@@ -46,4 +46,4 @@ jobs:
         with:
           push: true
           # Name our container image ghcr.io/YOUR_USER/lab-cicd:latest and something similar to ghcr.io/YOUR_USER/lab-cicd:f296f4d
-          tags: "${{ env.IMAGE_REGISTRY }}/lab-cicd:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/lab-cicd:latest"
+          tags: "${{ env.IMAGE_REGISTRY }}/ci-cd-test:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/ci-cd-test:latest"
